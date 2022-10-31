@@ -1,3 +1,4 @@
+import 'package:first_project/core/utils/assets_data.dart';
 import 'package:flutter/cupertino.dart';
 
 class HomePageBody extends StatelessWidget {
@@ -5,6 +6,12 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Image.asset(AssetsData.logo),
+      ],
+    );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'features/splash/views/main_home_page.dart';
+import 'constants.dart';
+import 'features/splash/views/home_page.dart';
 
 void main() {
   runApp(const BookApp());
@@ -12,7 +12,9 @@ class BookApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData().copyWith(scaffoldBackgroundColor: primaryColor),
       home: HomePage(),
     );
   }
